@@ -51,6 +51,12 @@ proxy:
   #   '/test':
   #     target: 'https://example.com'
   #     changeOrigin: true
+  # proxy:
+  endpoints:
+  '/uselessfacts/api':
+  changeOrigin: true
+  target: 'https://uselessfacts.jsph.pl'
+  secure: false
 
 # Reference documentation http://backstage.io/docs/features/techdocs/configuration
 # Note: After experimenting with basic setup, use CI/CD to generate docs
